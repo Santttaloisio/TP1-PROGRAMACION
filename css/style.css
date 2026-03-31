@@ -1,0 +1,144 @@
+:root {
+    --fondo: #111318;
+    --panel: #0f1115;
+    --borde: #c9a227;
+    --borde-oscuro: #8c6f1d;
+    --dorado: #f5c542;
+    --texto: #e8e8e8;
+    --texto-claro: #ffffff;
+    --texto-oscuro: #1a1a1a;
+    --resalte: #ffd966;
+    --fuente-base: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-base);
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--borde-oscuro);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dorado);
+}
+
+header,
+footer {
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    padding: 8px 12px;
+}
+
+header {
+    border-bottom: 3px solid var(--borde);
+    text-align: left;
+    min-height: 80px;
+}
+
+
+.bloque-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+.bloque-logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.nombre-sitio {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 21px;
+    color: var(--dorado);
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    text-align: right;
+}
+
+.menu-principal a {
+    display: inline-block;
+    padding: 6px 8px;
+    font-weight: 700;
+    margin: 0 6px;
+}
+
+main {
+    margin: 16px;
+}
+
+.portada {
+    background: var(--panel);
+    padding: 20px 16px;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+}
+
+.portada h1 {
+    color: var(--texto-claro);
+    margin-bottom: 8px;
+}
+
+.portada p {
+    max-width: 640px;
+    margin-bottom: 10px;
+}
+
+.boton-primario {
+    display: inline-block;
+    background: var(--dorado);
+    color: var(--texto-oscuro);
+    padding: 8px 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid var(--borde-oscuro);
+}
+
+.boton-primario:hover {
+    background: var(--resalte);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .bloque-logo img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    .bloque-logo,
+    .nombre-sitio,
+    .menu-principal {
+        display: block;
+        width: 100%;
+        margin: 4px 0;
+    }
+
+    .menu-principal {
+        text-align: center;
+    }
+
+    .menu-principal a {
+        margin: 4px;
+    }
+}
