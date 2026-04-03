@@ -222,6 +222,10 @@ header {
     outline: none;
 }
 
+.seccion-formulario textarea {
+  resize: none;
+}
+
 .seccion-formulario input:focus,
 .seccion-formulario select:focus,
 .seccion-formulario textarea:focus {
@@ -231,15 +235,6 @@ header {
 
 .seccion-formulario input[type="checkbox"] {
     margin-right: 6px;
-}
-
-.seccion-formulario label:has(input[type="checkbox"]) {
-    display: flex;
-    align-items: center;
-}
-
-.seccion-formulario button:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .seccion-info ul {
