@@ -1,144 +1,280 @@
 :root {
-    --fondo: #111318;
-    --panel: #0f1115;
-    --borde: #c9a227;
-    --borde-oscuro: #8c6f1d;
-    --dorado: #f5c542;
-    --texto: #e8e8e8;
-    --texto-claro: #ffffff;
-    --texto-oscuro: #1a1a1a;
-    --resalte: #ffd966;
-    --fuente-base: Arial, sans-serif;
+  --fondo: #0b0d12;
+  --panel: #151922;
+  --borde: #c9a227;
+  --borde-oscuro: #8c6f1d;
+  --dorado: #f5c542;
+  --texto: #e8e8e8;
+  --texto-claro: #ffffff;
+  --texto-oscuro: #1a1a1a;
+  --resalte: #ffd966;
+  --fuente-base: Arial, sans-serif;
+}
+
+/* ==== GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--fuente-base);
-    background: var(--fondo);
-    color: var(--texto);
-    line-height: 1.6;
+  font-family: var(--fuente-base);
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  margin: 20px auto;
+}
+
+section {
+  background: var(--panel);
+  padding: 20px;
+  margin-bottom: 36px;
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 0 6px rgba(245, 197, 66, 0.1);
+}
+
+h1,
+h2 {
+  color: var(--texto-claro);
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--dorado);
 }
 
 a {
-    color: var(--borde-oscuro);
-    text-decoration: none;
+  color: var(--dorado);
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--dorado);
+  text-decoration: underline;
 }
 
 header,
 footer {
-    background: var(--panel);
-    border: 1px solid var(--borde);
-    padding: 8px 12px;
-}
-
-header {
-    border-bottom: 3px solid var(--borde);
-    text-align: left;
-    min-height: 80px;
-}
-
-
-.bloque-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: auto;
-}
-
-.bloque-logo img {
-    width: 64px;
-    height: 64px;
-}
-
-.nombre-sitio {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 21px;
-    color: var(--dorado);
-    margin-left: 6px;
-    margin-right: 10px;
-}
-
-.menu-principal {
-    display: inline-block;
-    vertical-align: middle;
-    width: 60%;
-    text-align: right;
-}
-
-.menu-principal a {
-    display: inline-block;
-    padding: 6px 8px;
-    font-weight: 700;
-    margin: 0 6px;
-}
-
-main {
-    margin: 16px;
-}
-
-.portada {
-    background: var(--panel);
-    padding: 20px 16px;
-    border: 1px solid var(--borde);
-    border-radius: 6px;
-}
-
-.portada h1 {
-    color: var(--texto-claro);
-    margin-bottom: 8px;
-}
-
-.portada p {
-    max-width: 640px;
-    margin-bottom: 10px;
-}
-
-.boton-primario {
-    display: inline-block;
-    background: var(--dorado);
-    color: var(--texto-oscuro);
-    padding: 8px 14px;
-    font-weight: 700;
-    border-radius: 6px;
-    border: 1px solid var(--borde-oscuro);
-}
-
-.boton-primario:hover {
-    background: var(--resalte);
+  background: var(--panel);
+  padding: 8px 12px;
 }
 
 footer {
-    text-align: center;
-    margin-top: 20px;
+  border-top: 1px solid var(--borde);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: min(95%, 900px);
+    margin: 0 auto;
+}
+
+.boton-primario {
+  display: inline-block;
+  background: var(--dorado);
+  color: var(--texto-oscuro);
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid var(--borde-oscuro);
+}
+
+.boton-primario:hover {
+  background: var(--resalte);
+}
+
+/* ==== HEADER ==== */
+
+header {
+  border-bottom: 1px solid var(--borde);
+  box-shadow: 0 10px 15px rgba(245, 197, 66, 0.25);
+  margin-bottom: 50px;
+}
+
+.header-container {
+  width: 100%;
+  max-width: min(95%, 1400px);
+  margin: 0 auto;
+}
+.logo-container {
+  width: 49%;
+  text-align: left;
+  display: inline-block;
+}
+
+.bloque-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+
+.bloque-logo img {
+  width: 64px;
+  height: 64px;
+}
+
+.nombre-sitio {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  color: var(--dorado);
+  margin-left: 6px;
+  margin-right: 10px;
+}
+
+.menu-principal {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+}
+
+.menu-principal a {
+  display: inline-block;
+  padding: 6px 8px;
+  font-weight: 700;
+  margin: 0 6px;
 }
 
 @media (max-width: 900px) {
-    .bloque-logo img {
-        width: 70px;
-    }
+  .bloque-logo img {
+    width: 70px;
+  }
 }
 
 @media (max-width: 600px) {
-    header {
-        text-align: center;
-    }
+  header {
+    text-align: center;
+  }
 
-    .bloque-logo,
-    .nombre-sitio,
-    .menu-principal {
-        display: block;
-        width: 100%;
-        margin: 4px 0;
-    }
+  .bloque-logo,
+  .nombre-sitio,
+  .menu-principal {
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+  }
 
-    .menu-principal {
-        text-align: center;
-    }
+  .menu-principal {
+    text-align: center;
+  }
 
-    .menu-principal a {
-        margin: 4px;
-    }
+  .menu-principal a {
+    margin: 4px;
+  }
+}
+
+/* ==== INDEX PAGE ==== */
+
+.portada h1 {
+  color: var(--texto-claro);
+  margin-bottom: 8px;
+}
+
+.portada p {
+  margin-bottom: 16px;
+}
+
+/* ==== CONTACTO PAGE ==== */
+
+.seccion-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.seccion-formulario form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.seccion-formulario input,
+.seccion-formulario select,
+.seccion-formulario textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #2a2f3a;
+    background: #1a1f2a;
+    color: var(--texto);
+    font-size: 14px;
+    outline: none;
+}
+
+.seccion-formulario input:focus,
+.seccion-formulario select:focus,
+.seccion-formulario textarea:focus {
+    border-color: var(--dorado);
+    box-shadow: 0 0 6px rgba(245, 197, 66, 0.3);
+}
+
+.seccion-formulario input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.seccion-formulario label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+}
+
+.seccion-formulario button:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.seccion-info ul {
+    list-style: none;
+}
+
+.seccion-info li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.seccion-horarios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.seccion-horarios th {
+    text-align: left;
+    padding: 10px;
+    background: #1a1f2a;
+    color: var(--dorado);
+}
+
+.seccion-horarios td {
+    padding: 10px;
+}
+
+.seccion-horarios tr:nth-child(even) {
+    background: rgba(255,255,255,0.02);
+}
+
+.seccion-mapa iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
