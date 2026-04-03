@@ -40,7 +40,6 @@ header {
     min-height: 80px;
 }
 
-
 .bloque-logo {
     display: inline-block;
     vertical-align: middle;
@@ -114,6 +113,32 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+.seccion-contenido h1 {
+    text-align: center;
+}
+
+.seccion-contenido h2 {
+    text-align: center;
+}
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    text-align: center;
+    width: 300px;
+}
+
+.servicio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 @media (max-width: 900px) {
     .bloque-logo img {
