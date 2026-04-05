@@ -119,7 +119,7 @@ footer {
 }
 
 .seccion-contenido h2 {
-    text-align: center;
+    text-align: center;  
 }
 .contenedor-servicios {
     display: flex;
@@ -137,6 +137,22 @@ footer {
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.servicios-detailing h2 {
+    text-align: center;
+
+}
+
+.detailing img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detailing p {
+    text-align: center;
 }
 
 
