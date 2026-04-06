@@ -12,17 +12,22 @@ El objetivo es representar una empresa mediante múltiples páginas html conecta
   - Implementación de pedido.html
   - Reutilizacion de estilos para formulario de pedido en style.css
 
-- Nombre Alumno: (rama: alumno2_lanusse)
+- Conrado Lanusse (rama: alumno2_lanusse)
   - Refactor header y footer
   - Creación página contacto.html
   - Agregado estilos generales y clases reutilizables
 
-- Nombre Alumno: (rama: alumno3_)
+- Laureano Kronemberger (rama: alumno3_kronemberger)
+  - Implementación de faq.html.
+  - Implementación de estilos.
 
 - Santino Aloisio (rama: alumno4_aloisio)
   - Implementación de servicios.html.
+  - Implementación de estilos.
 
-- Nombre Alumno: (rama: alumno5_)
+- Francisco Jaszczuk (rama: alumno5_jaszczuk)
+  - Implementación de equipo.html.
+  - Implementación de estilos.
 
 
 
