@@ -232,6 +232,10 @@ header {
   margin: 0 6px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .seccion-contenido h1 {
   text-align: center;
 }
@@ -287,31 +291,22 @@ header {
   text-align: center;
 }
 
-.servicio-tecnico h1 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.servicio-tecnico h2 {
-  text-align: center;
+.servicio {
+  width: 270px;
 }
 
 .servicio-tecnico {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
 }
 
-.servicio-tecnico .servicio {
-  text-align: center;
-  width: 300px;
-}
-
-.servicio-tecnico .servicio img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
+.servicio-tecnico h1,
+.servicio-tecnico h2 {
+    width: 100%;
+    text-align: center;
 }
 
 @media (max-width: 900px) {
