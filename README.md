@@ -12,16 +12,5 @@ El objetivo es representar una empresa mediante múltiples páginas html conecta
   - Implementación de pedido.html
   - Reutilizacion de estilos para formulario de pedido en style.css
 
-- Nombre Alumno: (rama: alumno2_)
-
-- Nombre Alumno: (rama: alumno3_)
-
-- Santino Aloisio (rama: alumno4_aloisio)
-  - Implementación de servicios.html.
-
-- Nombre Alumno: (rama: alumno5_)
-
-
-
 
 
