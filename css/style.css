@@ -11,6 +11,7 @@
   --fuente-base: Arial, sans-serif;
 }
 
+/* ==== GENERAL ==== */
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +39,7 @@ section {
   padding: 20px;
   margin-bottom: 36px;
   border-radius: 10px;
+
   box-shadow:
     0 4px 12px rgba(0, 0, 0, 0.4),
     0 0 6px rgba(245, 197, 66, 0.1);
@@ -70,16 +72,55 @@ a:hover {
 header,
 footer {
   background: var(--panel);
-  border: 1px solid var(--borde);
   padding: 8px 12px;
 }
 
+footer {
+  border-top: 1px solid var(--borde);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: min(95%, 900px);
+    margin: 0 auto;
+}
+
+.boton-primario {
+  display: inline-block;
+  background: var(--dorado);
+  color: var(--texto-oscuro);
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid var(--borde-oscuro);
+}
+
+.boton-primario:hover {
+  background: var(--resalte);
+}
+
+/* ==== HEADER ==== */
+
 header {
   border-bottom: 1px solid var(--borde);
-  text-align: left;
-  min-height: 80px;
   box-shadow: 0 10px 15px rgba(245, 197, 66, 0.25);
   margin-bottom: 50px;
+}
+
+.header-container {
+  width: 100%;
+  max-width: min(95%, 1400px);
+  margin: 0 auto;
+}
+.logo-container {
+  width: 49%;
+  text-align: left;
+  display: inline-block;
 }
 
 .bloque-logo {
@@ -116,12 +157,35 @@ header {
   margin: 0 6px;
 }
 
-.portada {
-  background: var(--panel);
-  padding: 20px 16px;
-  border: 1px solid var(--borde);
-  border-radius: 6px;
+@media (max-width: 900px) {
+  .bloque-logo img {
+    width: 70px;
+  }
 }
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  .bloque-logo,
+  .nombre-sitio,
+  .menu-principal {
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .menu-principal {
+    text-align: center;
+  }
+
+  .menu-principal a {
+    margin: 4px;
+  }
+}
+
+/* ==== INDEX PAGE ==== */
 
 .portada h1 {
   color: var(--texto-claro);
@@ -129,54 +193,10 @@ header {
 }
 
 .portada p {
-  max-width: 640px;
   margin-bottom: 16px;
 }
 
-.boton-primario {
-  display: inline-block;
-  background: var(--dorado);
-  color: var(--texto-oscuro);
-  padding: 8px 14px;
-  font-weight: 700;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 6px;
-  border: 1px solid var(--borde-oscuro);
-}
-
-.boton-primario:hover {
-  background: var(--resalte);
-}
-
-footer {
-  border-top: 1px solid var(--borde);
-  text-align: center;
-  font-size: 12px;
-  margin-top: 50px;
-}
-
-.container {
-  width: 100%;
-  max-width: min(95%, 900px);
-  margin: 0 auto;
-}
-
-.header-container {
-  width: 100%;
-  max-width: min(95%, 1400px);
-  margin: 0 auto;
-}
-
-.logo-container {
-  width: 49%;
-  text-align: left;
-  display: inline-block;
-}
-
-h1 {
-  text-align: center;
-}
+/* ==== SERVICIOS PAGE ==== */
 
 .seccion-contenido h1 {
   text-align: center;
@@ -185,8 +205,6 @@ h1 {
 .seccion-contenido h2 {
   text-align: center;
 }
-
-/* SERVICIOS.HTML: GRILLAS Y SECCIONES DE SERVICIOS */
 
 .contenedor-servicios {
   display: flex;
@@ -247,58 +265,30 @@ h1 {
   text-align: center;
 }
 
-/* FIN SERVICIOS.HTML */
-
-@media (max-width: 900px) {
-  .bloque-logo img {
-    width: 70px;
-  }
-}
-
-@media (max-width: 600px) {
-  header {
-    text-align: center;
-  }
-
-  .bloque-logo,
-  .nombre-sitio,
-  .menu-principal {
-    display: block;
-    width: 100%;
-    margin: 4px 0;
-  }
-
-  .menu-principal {
-    text-align: center;
-  }
-
-  .menu-principal a {
-    margin: 4px;
-  }
-}
+/* ==== CONTACTO-PEDIDO PAGE ==== */
 
 .seccion-formulario form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .seccion-formulario form > div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .seccion-formulario input,
 .seccion-formulario select,
 .seccion-formulario textarea {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #2a2f3a;
-  background: #1a1f2a;
-  color: var(--texto);
-  font-size: 14px;
-  outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #2a2f3a;
+    background: #1a1f2a;
+    color: var(--texto);
+    font-size: 14px;
+    outline: none;
 }
 
 .seccion-formulario textarea {
@@ -308,47 +298,47 @@ h1 {
 .seccion-formulario input:focus,
 .seccion-formulario select:focus,
 .seccion-formulario textarea:focus {
-  border-color: var(--dorado);
-  box-shadow: 0 0 6px rgba(245, 197, 66, 0.3);
+    border-color: var(--dorado);
+    box-shadow: 0 0 6px rgba(245, 197, 66, 0.3);
 }
 
 .seccion-formulario input[type="checkbox"] {
-  margin-right: 6px;
+    margin-right: 6px;
 }
 
 .seccion-info ul {
-  list-style: none;
+    list-style: none;
 }
 
 .seccion-info li {
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .seccion-horarios table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
 .seccion-horarios th {
-  text-align: left;
-  padding: 10px;
-  background: #1a1f2a;
-  color: var(--dorado);
+    text-align: left;
+    padding: 10px;
+    background: #1a1f2a;
+    color: var(--dorado);
 }
 
 .seccion-horarios td {
-  padding: 10px;
+    padding: 10px;
 }
 
 .seccion-horarios tr:nth-child(even) {
-  background: rgba(255,255,255,0.02);
+    background: rgba(255,255,255,0.02);
 }
 
 .seccion-mapa iframe {
-  width: 100%;
-  height: 320px;
-  border-radius: 8px;
-  margin-top: 10px;
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
