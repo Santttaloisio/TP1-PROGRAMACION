@@ -342,3 +342,21 @@ header {
     border-radius: 8px;
     margin-top: 10px;
 }
+
+/* ==== FAQ PAGE ==== */
+
+.seccion-faq h1 {
+  margin-bottom: 1.5rem;
+}
+
+.seccion-faq h3 {
+  color: var(--dorado);
+}
+
+.seccion-faq p{
+  margin: 10px 0px 0px 5px;
+}
+
+hr {
+  margin: 1rem 0;
+}
