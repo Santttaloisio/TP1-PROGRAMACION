@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto.">
+    <title>Contacto | Aurum Motors</title>
+    <link rel="icon" href="../assets/imgs/aurom-logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="bloque-logo">
+                    <a href="../index.html"><img src="../assets/imgs/aurom-logo.png" alt="Logo Aurum Motors"></a>
+                </div>
+                <div class="nombre-sitio">Aurum Motors</div>
+            </div>
+            <nav class="menu-principal">
+                <a href="../index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="pedido.html">Pedido</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="seccion-contenido">
+            <h1>Contacto</h1>
+            <p>¿Tenés dudas, consultas o querés coordinar una visita? Completá el formulario o utilizá nuestros canales
+                de contacto. En Aurum Motors estamos para ayudarte a encontrar tu próximo vehículo.</p>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Envíanos un mensaje</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div>
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="consulta">Consulta general</option>
+                        <option value="venta">Compra de vehículo</option>
+                        <option value="financiacion">Financiación</option>
+                        <option value="servicio">Servicio técnico</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" required>
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+
+                <button type="submit" class="boton-primario">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Información de contacto</h2>
+            <ul>
+                <li><strong>Dirección:</strong> Av. Alem 1234, Bahía Blanca, Buenos Aires</li>
+                <li><strong>Teléfono:</strong> +54 291 456 7890</li>
+                <li><strong>Email:</strong> contacto@aurummotors.com</li>
+            </ul>
+        </section>
+
+        <section class="seccion-horarios">
+            <h2>Horarios de atención</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>09:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábados</td>
+                        <td>09:00 - 13:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingos</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="seccion-mapa">
+            <h2>¿Dónde estamos?</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.6787435529923!2d-62.27330252325323!3d-38.70222308533753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbb510f1505f5%3A0x7293a503a5036632!2sAv.%20Alem%201234%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1775256017895!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2026 Aurum Motors. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

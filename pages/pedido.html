@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de pedido de servicio.">
+    <title>Pedido | Aurum Motors</title>
+    <link rel="icon" href="../assets/imgs/aurom-logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="bloque-logo">
+                    <a href="../index.html"><img src="../assets/imgs/aurom-logo.png" alt="Logo Aurum Motors"></a>
+                </div>
+                <div class="nombre-sitio">Aurum Motors</div>
+            </div>
+            <nav class="menu-principal">
+                <a href="../index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="pedido.html">Pedido</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="seccion-contenido">
+            <h1>
+                Pedido de Vehículo
+            </h1>
+            <p>
+                Completá este formulario para solicitar una cotización personalizada de tu próximo vehículo de alta gama. Nuestro equipo comercial se pondrá en contacto para confirmar disponibilidad, opciones y condiciones.
+            </p>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Solicitar cotización</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">
+                        Nombre completo:
+                    </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">
+                        Correo electrónico:
+                    </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div>
+                    <label for="marca">Marca de interés:</label>
+                    <select id="marca" name="marca" required>
+                        <option value="">Seleccioná una marca</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="audi">Audi</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="lamborghini">Lamborghini</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="modelo">Modelo de interés:</label>
+                    <input type="text" id="modelo" name="modelo" placeholder="Ej: 911 Carrera, M4 Competition" required>
+                </div>
+
+                <div>
+                    <label for="anio">
+                        Año mínimo:
+                    </label>
+                    <input type="number" id="anio" name="anio" min="2018" max="2026" required>
+                </div>
+
+                <div>
+                    <label for="presupuesto">Presupuesto estimado (USD):</label>
+                    <input type="number" id="presupuesto" name="presupuesto" min="50000" step="1000" required>
+                </div>
+
+                <div>
+                    <label for="forma-pago">Forma de pago:</label>
+                    <select id="forma-pago" name="forma-pago" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option value="contado">Contado</option>
+                        <option value="financiado">Financiado</option>
+                        <option value="permuta">Permuta + diferencia</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="detalles">Detalles adicionales:</label>
+                    <textarea id="detalles" name="detalles" rows="5" placeholder="Color preferido, equipamiento, kilometraje máximo, versión, etc."></textarea>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" required>
+                        Confirmo que los datos ingresados son correctos
+                    </label>
+                </div>
+
+                <button type="submit" class="boton-primario">
+                    Enviar pedido
+                </button>
+                <button type="reset" class="boton-primario">
+                    Limpiar formulario
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Aurum Motors. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,1 +1,35 @@
-# TP1-PROGRAMACION
+# TechNova Solutions
+
+## Descripción del proyecto
+Sitio web desarrollado como trabajo practico para la materia Programacion 3. 
+La pagina representa a Aurum Motors, una concesionaria de autos de alta gama.
+El objetivo es representar una empresa mediante múltiples páginas html conectadas entre sí, utilizando estructura semántica y estilos css externos.
+
+## Integrantes y contribuciones
+
+- Vladimir Kozik (rama: alumno1_kozik)
+  - Participacion en estructura de carpetas inicial y estilos generales en develop.
+  - Implementación de pedido.html
+  - Reutilizacion de estilos para formulario de pedido en style.css
+
+- Conrado Lanusse (rama: alumno2_lanusse)
+  - Refactor header y footer
+  - Creación página contacto.html
+  - Agregado estilos generales y clases reutilizables
+
+- Laureano Kronemberger (rama: alumno3_kronemberger)
+  - Implementación de faq.html.
+  - Implementación de estilos.
+
+- Santino Aloisio (rama: alumno4_aloisio)
+  - Implementación de servicios.html.
+  - Implementación de estilos.
+
+- Francisco Jaszczuk (rama: alumno5_jaszczuk)
+  - Implementación de equipo.html.
+  - Implementación de estilos.
+
+
+
+
+
