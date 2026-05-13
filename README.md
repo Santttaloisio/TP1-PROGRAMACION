@@ -181,7 +181,7 @@ Grupo 5.
 
 - Vladimir Kozik (rama: alumno1_kozik)
   - Armado de la estructura base del backend con Node.js, Express, rutas, controladores y archivos JSON.
-  - Configuracion inicial del servidor, middlewares y deploy en Render.
+  - Configuracion inicial del servidor y deploy en Render.
   - Participacion en la integracion frontend de servicios con consumo de API, renderizado dinamico y documentacion.
 
 - Conrado Lanusse (rama: alumno2_lanusse)
@@ -242,7 +242,6 @@ Responsabilidades:
 - Cargar variables de entorno con `dotenv`.
 - Crear la aplicacion con `express()`.
 - Definir el puerto con `process.env.PORT || 3000`.
-- Activar middlewares como `cors()` y `express.json()`.
 - Montar las rutas de servicios y equipo.
 - Agregar una ruta raiz `/`.
 - Agregar una respuesta 404 para rutas inexistentes.
