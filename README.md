@@ -200,9 +200,13 @@ Grupo 5.
   - Implementacion y ajustes de la seccion de servicios.
 
 - Francisco Jaszczuk (rama: alumno5_jaszczuk)
-  -
-  -
-  -
+  -Participación en la sección de equipo del frontend.
+   Consumo del endpoint /equipo desde el backend deployado en Render.
+   Renderizado dinámico de integrantes mediante JavaScript y manipulación del DOM.
+   Implementación de tarjetas de equipo con nombre, rol, descripción e imagen.
+   Ajustes de estilos CSS para mejorar la visualización de las cards y evitar imágenes sobredimensionadas.
+   Manejo de carga inicial y errores al obtener los datos del equipo.
+  
 
 ## Distribucion de carpetas del backend
 
