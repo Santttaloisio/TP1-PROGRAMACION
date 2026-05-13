@@ -8,6 +8,8 @@
     <title>Servicios | Aurum Motors</title>
     <link rel="icon" href="../assets/imgs/aurom-logo.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/modal.css">
 </head>
 
 <body>
@@ -42,10 +44,18 @@
         <section class="seccion-contenido">
             <h2>Catalogo de servicios</h2>
 
-            <div id="servicios-container" class="contenedor-servicios" aria-live="polite">
-                <p class="estado-carga">Cargando servicios...</p>
+            <input type="text" class="buscador-servicios" id="buscador-servicios" placeholder="Buscar servicio...">
+
+            <div id="servicios-container" class="contenedor-servicios"></div>
+
+                <div id="modal-servicio" class="modal">
+                    <div class="modal-contenido">
+                        <button id="cerrar-modal" class="modal-cerrar">X</button>
+                    <div id="modal-body"></div>
+                </div>
             </div>
-        </section>
+
+</section>
     </main>
     <footer>
         <p>© 2026 Aurum Motors. Todos los derechos reservados.</p>
