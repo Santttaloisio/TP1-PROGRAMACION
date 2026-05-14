@@ -23,6 +23,7 @@
                 <a href="equipo.html">Equipo</a>
                 <a href="pedido.html">Pedido</a>
                 <a href="contacto.html">Contacto</a>
+                <a href="perfil.html">Perfil</a>
                 <a href="faq.html">FAQ</a>
             </nav>
         </div>
@@ -46,39 +47,14 @@
         <section class="seccion-contenido">
           <h2>Nuestro Equipo</h2>
       
-          <div class="equipo-grid">
-            <div class="miembro-card">
-                <img src="../assets/imgs/modelo1.jpg"width="150" style="display:block; margin: 0 auto 16px;">              <h3>Martín López</h3>
-              <h4>Gerente Comercial</h4>
-              <p>
-                Responsable de la estrategia de ventas, atención personalizada a clientes premium y cierre de operaciones de alto valor.
-              </p>
-            </div>
-            <br>
-            <br>
-      
-            <div class="miembro-card">
-                <img src="../assets/imgs/modelo2.jpg"width="150" style="display:block; margin: 0 auto 16px;">              <h3>Sofía Martínez</h3>
-              <h4>Asesora de Ventas Senior</h4>
-              <p>
-                Especialista en asesoramiento integral, acompañando al cliente en todo el proceso de compra con enfoque en experiencia de lujo.
-              </p>
-            </div>
-            <br>
-            <br>
-      
-            <div class="miembro-card">
-                <img src="../assets/imgs/modelo3.jpg"width="150" style="display:block; margin: 0 auto 16px;">              <h3>Federico Gómez</h3>
-              <h4>Especialista Técnico Automotriz</h4>
-              <p>
-                Encargado de la revisión técnica, control de calidad y asesoramiento postventa para garantizar excelencia en cada vehículo.
-              </p>
-            </div>
+          <div id="equipo-container" class="equipo-grid" aria-live="polite">
+            <p class="estado-carga">Cargando equipo...</p>
           </div>
         </section>
       </main>
     <footer>
         <p>© 2026 Aurum Motors. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/equipo.js" type="module"></script>
 </body>
 </html>
