@@ -18,6 +18,7 @@ Funciones y responsabilidades:
 - `cargarDetalleServicio(servicio)`: usa el `id` del servicio clickeado, pide `GET /servicios/:id` y muestra el detalle en la modal.
 - Evento `input` del buscador: filtra el array `servicios` por titulo y vuelve a renderizar los resultados.
 - Eventos de cierre de modal: remueven la clase `activa` para ocultar la ventana de detalle.
+- Evento `submit` del formulario de login: envía los datos del formulario al backend para validar login.
 
 Variables importantes:
 
@@ -145,25 +146,13 @@ Funcion:
 getEquipo
 ```
 
-### Rutas pendientes segun la consigna
-
-La consigna tambien solicita otras rutas que seran agregadas por otros integrantes del equipo:
-
-```txt
-GET /perfil/:id
-```
-
-Esta ruta debe devolver los datos del usuario logueado, incluyendo nombre, mail, fecha de registro, foto y ultimos 3 pedidos.
-
-Como opcional, la consigna propone:
+### POST /login
 
 ```txt
 POST /login
 ```
 
-Esta ruta serviria para recibir usuario y contrasena desde el frontend y verificar los datos contra un JSON de usuarios.
-
-Cuando esas funcionalidades se implementen, cada integrante debe completar esta documentacion con sus rutas, funciones, JSON y flujo correspondiente.
+Envía usuario y password para validar acceso. En caso afirmativo, retorna información del perfil asociado a esas credenciales.
 
 ## Descripcion del proyecto
 
@@ -185,9 +174,9 @@ Grupo 5.
   - Participacion en la integracion frontend de servicios con consumo de API, renderizado dinamico y documentacion.
 
 - Conrado Lanusse (rama: alumno2_lanusse)
-  -
-  -
-  -
+  - Creación de la página de perfil y formulario de login
+  - Desarrollo de integración con el endpoint de /login
+  - Agregado funcionalidad del formulario de login y render dinámico de la página de perfil a partir de respueta del backend
 
 - Laureano Kronemberger (rama: alumno3_kronemberger)
   - Implementación de ruta y controlador para el login en backend.
