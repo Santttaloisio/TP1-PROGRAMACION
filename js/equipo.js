@@ -1,22 +1,26 @@
+const API_URL = 'https://tp3-backend-grupo-5.onrender.com'
+
 const contenedorEquipo = document.querySelector('#equipo-container')
+
+function mostrarSpinner(mensaje) {
+  return `
+    <div class="loader-container">
+      <div class="spinner"></div>
+      <p>${mensaje}</p>
+    </div>
+  `
+}
 
 async function cargarEquipo() {
   try {
     if (!contenedorEquipo) return
 
-    contenedorEquipo.innerHTML = `
-      <div class="loader-container">
-        <p>Cargando equipo...</p>
-      </div>
-    `
+    contenedorEquipo.innerHTML = mostrarSpinner('Cargando equipo...')
 
-    const response = await fetch('http://localhost:3000/equipo')
+    const response = await fetch(`${API_URL}/equipo`)
     const data = await response.json()
 
     contenedorEquipo.innerHTML = ''
-
-    console.log(response)
-    console.log(data)
 
     data.forEach((miembro) => {
       const div = document.createElement('div')
