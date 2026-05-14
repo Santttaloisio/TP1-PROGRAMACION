@@ -190,9 +190,8 @@ Grupo 5.
   -
 
 - Laureano Kronemberger (rama: alumno3_kronemberger)
-  -
-  -
-  -
+  - Implementación de ruta y controlador para el login en backend.
+  - Implementación de ruta y controlador para obtener perfiles en backend.
 
 - Santino Aloisio (rama: alumno4_aloisio)
   - Participacion en servicios del backend.
